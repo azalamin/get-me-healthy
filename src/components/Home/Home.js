@@ -1,8 +1,10 @@
-import React from 'react';
-import './Home.css';
+import React from "react";
+import Services from "../Services/Services";
+import "./Home.css";
 
 const Home = () => {
-    return (
+  return (
+    <>
       <div className="home-container">
         <div className="text-white container pt-5">
           <div className="mt-md-5 mx-auto info-container">
@@ -12,7 +14,7 @@ const Home = () => {
               Personal trainers are responsible for educating clients and
               enforcing policies regarding safe and proper use of equipment.
             </p>
-            <div className='md-text-align-start text-align-center button-area'>
+            <div className="md-text-align-start text-align-center button-area">
               <button className="btn btn-outline-warning btn-lg d-md-inline  ">
                 SIGN UP
               </button>
@@ -23,7 +25,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-    );
+      <div className="py-5">
+          <Services></Services>
+      </div>
+    </>
+  );
 };
 
 export default Home;

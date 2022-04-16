@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Personal training start up",
+    "price": 129.99,
+    "duration": "PER DAY",
+    "supportTime": "2 hours of Dedicated Training Support",
+    "diet": "Diet Recommendations",
+    "facility": "Free Access to the VIP gym/pool",
+    "img": "https://i.ibb.co/FbHsvMJ/service-1.png",
+    "id": 1
+  },
+  {
+    "name": "Personal Training Grow up",
+    "price": 275.99,
+    "duration": "12 SESSIONS",
+    "supportTime": "No Expiry Date for the 12-visit Membership",
+    "diet": "Diet Recommendations and Control",
+    "facility": "Free Access to the VIP gym/pool",
+    "img": "https://i.ibb.co/Xz96PYc/service-2.png",
+    "id": 2
+  },
+  {
+    "name": "Personal training & Fitness Studio",
+    "price": 349.99,
+    "duration": "MONTH",
+    "supportTime": "1 Month of Dedicated Trainings",
+    "diet": "24/7 in Touch on the Phone",
+    "facility": "Free Access to the VIP gym/pool",
+    "img": "https://i.ibb.co/BrRnMhY/service-3.png",
+    "id": 3
+  }
+]

@@ -8,22 +8,26 @@ const Header = () => {
       <Navbar
         collapseOnSelect
         expand="lg"
-        className="py-4 position-sticky top-0 header"
+        className="py-4 header"
+        sticky='top'
       >
         <Container>
           <Navbar.Brand as={Link} to="/" className="logo text-white">
             GET ME HEALTHY
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            className="bg-white"
+          />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto link-container">
-              <Nav.Link className='text-white' as={Link} to="/">
+              <Nav.Link className="text-white" as={Link} to="/">
                 Home
               </Nav.Link>
-              <Nav.Link className='text-white' as={Link} to="/services">
+              <Nav.Link className="text-white" as={Link} to="/services">
                 Services
               </Nav.Link>
-              <Nav.Link className='text-white' as={Link} to="/about">
+              <Nav.Link className="text-white" as={Link} to="/about">
                 About Me
               </Nav.Link>
             </Nav>
