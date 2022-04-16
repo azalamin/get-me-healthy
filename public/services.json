@@ -7,7 +7,8 @@
     "diet": "Diet Recommendations",
     "facility": "Free Access to the VIP gym/pool",
     "img": "https://i.ibb.co/FbHsvMJ/service-1.png",
-    "id": 1
+    "id": 1,
+    "des": "Individuals holding this position must be able to develop, document, and implement one-on-one, partner, or group workout programs that match the needs and goals of clients."
   },
   {
     "name": "Personal Training Grow up",
@@ -17,7 +18,8 @@
     "diet": "Diet Recommendations and Control",
     "facility": "Free Access to the VIP gym/pool",
     "img": "https://i.ibb.co/Xz96PYc/service-2.png",
-    "id": 2
+    "id": 2,
+    "des": "A growth mindset fosters creativity, innovation and the ability to handle difficulty and setbacks. This can result in improved performance when facing challenges in the workplace."
   },
   {
     "name": "Personal training & Fitness Studio",
@@ -27,6 +29,7 @@
     "diet": "24/7 in Touch on the Phone",
     "facility": "Free Access to the VIP gym/pool",
     "img": "https://i.ibb.co/BrRnMhY/service-3.png",
-    "id": 3
+    "id": 3,
+    "des": "Fitness studio means a development where space, equipment or instruction is provided for activities related to physical well-being such as dance, martial arts, yoga, and other forms of physical."
   }
 ]

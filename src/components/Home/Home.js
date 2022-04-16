@@ -5,10 +5,10 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
-      <div className="home-container">
+      <div className="home-container mb-5">
         <div className="text-white container pt-5">
           <div className="mt-md-5 mx-auto info-container">
-            <h1 className="home-title">Get Me Healthy</h1>
+            <h1 className="home-title">Hi! I'm Alamin</h1>
             <h1 className="home-title">Your New Personal Trainer</h1>
             <p className="py-4">
               Personal trainers are responsible for educating clients and
@@ -25,7 +25,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="py-5">
+      <div className="mt-5">
           <Services></Services>
       </div>
     </>
