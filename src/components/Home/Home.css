@@ -1,0 +1,14 @@
+.home-container {
+  background-image: url("../../images/home-banner1.png");
+  height: calc(100vh - 70px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-title {
+  font-weight: 800;
+  font-size: 50px;
+}
+.home-container p {
+  font-size: 20px;
+}
