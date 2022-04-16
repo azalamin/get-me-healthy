@@ -20,8 +20,11 @@ const Header = () => {
               <Nav.Link className='text-white' as={Link} to="/">
                 Home
               </Nav.Link>
-              <Nav.Link className='text-white' as={Link} to="/">
+              <Nav.Link className='text-white' as={Link} to="/services">
                 Services
+              </Nav.Link>
+              <Nav.Link className='text-white' as={Link} to="/about">
+                About Me
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

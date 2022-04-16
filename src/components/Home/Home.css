@@ -12,3 +12,30 @@
 .home-container p {
   font-size: 20px;
 }
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .home-container .info-container {
+    width: 100%;
+    text-align: center;
+  }
+  .home-title {
+    font-size: 40px;
+  }
+  .button-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .button-area button {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 991px) {
+  .home-container .info-container {
+    width: 75%;
+  }
+}
