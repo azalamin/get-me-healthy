@@ -1,16 +1,12 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import CustomLink from '../../CustomLink/CustomLink';
 import './Header.css';
 
 const Header = () => {
     return (
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        className="py-4 header"
-        sticky='top'
-      >
+      <Navbar collapseOnSelect expand="lg" className="py-4 header" sticky="top">
         <Container>
           <Navbar.Brand as={Link} to="/" className="logo text-white">
             GET ME HEALTHY
@@ -21,15 +17,9 @@ const Header = () => {
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto link-container">
-              <Nav.Link className="text-white" as={Link} to="/">
-                Home
-              </Nav.Link>
-              <Nav.Link className="text-white" as={Link} to="/services">
-                Services
-              </Nav.Link>
-              <Nav.Link className="text-white" as={Link} to="/about">
-                About Me
-              </Nav.Link>
+              <CustomLink className="text-decoration-none ms-lg-4" to="/">Home</CustomLink>
+              <CustomLink className="text-decoration-none ms-lg-4" to="/about">About Me</CustomLink>
+              <CustomLink className="text-decoration-none ms-lg-4" to="/login">Login</CustomLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

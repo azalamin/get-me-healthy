@@ -15,6 +15,10 @@
 
 /* Responsive Design */
 @media (max-width: 767px) {
+  .home-container {
+    height: fit-content;
+    padding-bottom: 30px;
+  }
   .home-container .info-container {
     width: 100%;
     text-align: center;
