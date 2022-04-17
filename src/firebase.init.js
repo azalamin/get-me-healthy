@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_apiKey,
-  authDomain: process.env.REACT_APP_authDomain,
-  projectId: process.env.REACT_APP_projectId,
-  storageBucket: process.env.REACT_APP_storageBucket,
-  messagingSenderId: process.env.REACT_APP_messagingSenderId,
-  appId: process.env.REACT_APP_appId,
+  apiKey: "AIzaSyBi4HNwnzWj0SmkBlX3LXu1Gykbgfjx_cw",
+  authDomain: "get-me-healthy.firebaseapp.com",
+  projectId: "get-me-healthy",
+  storageBucket: "get-me-healthy.appspot.com",
+  messagingSenderId: "386275876713",
+  appId: "1:386275876713:web:63dcb69175c4cda2f227f8",
 };
 
 // Initialize Firebase
