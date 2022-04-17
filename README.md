@@ -21,3 +21,4 @@
 - React Firebase Hook (framework)
 - Firebase Authentication
 - React Toast (library)
+- react hook form
