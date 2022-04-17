@@ -29,22 +29,22 @@ const Header = () => {
         />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto link-container">
-            <CustomLink className="text-decoration-none ms-lg-4" to="/">
+            <CustomLink className="text-decoration-none ms-lg-4 n-link" to="/">
               Home
             </CustomLink>
-            <CustomLink className="text-decoration-none ms-lg-4" to="/about">
+            <CustomLink className="text-decoration-none ms-lg-4 n-link" to="/about">
               About Me
             </CustomLink>
             {user?.uid ? (
               <span
                 style={{ cursor: "pointer" }}
-                className="text-white ms-lg-3"
+                className="text-white ms-lg-3 n-link"
                 onClick={logout}
               >
                 Sign Out
               </span>
             ) : (
-              <CustomLink className="text-decoration-none ms-lg-4" to="/login">
+              <CustomLink className="text-decoration-none ms-lg-4 n-link" to="/login">
                 Login
               </CustomLink>
             )}

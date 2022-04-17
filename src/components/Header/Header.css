@@ -7,3 +7,10 @@
 .link-container a {
   font-weight: 500;
 }
+
+@media (max-width: 991px) {
+  .n-link {
+    display: block !important;
+    margin-top: 10px;
+  }
+}
