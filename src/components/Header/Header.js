@@ -38,7 +38,7 @@ const Header = () => {
             {user?.uid ? (
               <span
                 style={{ cursor: "pointer" }}
-                className="text-white ms-3"
+                className="text-white ms-lg-3"
                 onClick={logout}
               >
                 Sign Out
