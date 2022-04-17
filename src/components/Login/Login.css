@@ -144,3 +144,6 @@
 .valid-feedback {
   color: #2acc80;
 }
+
+@media (max-width: 576px) {
+}
