@@ -11,19 +11,19 @@ const Footer = () => {
               <div className="footer__widget">
                 <h2 className="mb-3">Website</h2>
                 <ul className="list-unstyled">
-                  <li>
-                    <Link to={'/about'}>About</Link>
+                  <li className="footer-link">
+                    <Link to={"/about"}>About</Link>
                   </li>
-                  <li>
+                  <li className="footer-link">
                     <a href="#services">Service</a>
                   </li>
-                  <li>
+                  <li className="footer-link">
                     <Link to="/blogs">Blog</Link>
                   </li>
-                  <li>
+                  <li className="footer-link">
                     <a href="#">Privacy Policy</a>
                   </li>
-                  <li>
+                  <li className="footer-link">
                     <a href="#">Faq</a>
                   </li>
                 </ul>
@@ -33,13 +33,13 @@ const Footer = () => {
               <div className="footer__widget">
                 <h2 className="mb-3">Services</h2>
                 <ul className="list-unstyled">
-                  <li>
+                  <li className="footer-link">
                     <a href="#services">Personal training start up</a>
                   </li>
-                  <li>
+                  <li className="footer-link">
                     <a href="#services">Personal Training Grow up</a>
                   </li>
-                  <li>
+                  <li className="footer-link">
                     <a href="#services">Personal training & Fitness Studio</a>
                   </li>
                 </ul>
@@ -49,13 +49,13 @@ const Footer = () => {
               <div className="footer__widget">
                 <h2 className="mb-3">Useful Links</h2>
                 <ul className="list-unstyled">
-                  <li>
+                  <li className="footer-link">
                     <Link to="/">Home</Link>
                   </li>
-                  <li>
+                  <li className="footer-link">
                     <Link to="/about">About</Link>
                   </li>
-                  <li>
+                  <li className="footer-link">
                     <Link to="/blogs">Blogs</Link>
                   </li>
                 </ul>

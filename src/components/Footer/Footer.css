@@ -13,3 +13,9 @@
 #footer .footer__copyright__text {
   background: #14121ae8;
 }
+.footer-link a {
+  text-decoration: none;
+}
+.footer-link a:hover {
+  text-decoration: underline;
+}
