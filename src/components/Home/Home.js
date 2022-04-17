@@ -1,4 +1,5 @@
 import React from "react";
+import KeyFeatures from "../KeyFeatures/KeyFeatures";
 import Services from "../Services/Services";
 import "./Home.css";
 
@@ -27,9 +28,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="mt-5" id="services">
+      <section className="my-5 pb-5" id="services">
         <Services></Services>
-      </div>
+      </section>
+      <section className="mt-5 py-5">
+        <KeyFeatures></KeyFeatures>
+      </section>
     </>
   );
 };
