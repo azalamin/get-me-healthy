@@ -8,6 +8,8 @@ import SocialSignIn from "../SocialSignIn/SocialSignIn";
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  // Handle React Firebase Hooks
   const [confirmPassword, setConfirmPassword] = useState("");
   const [confirmPasswordError, setConfirmPasswordError] = useState("");
   const [
@@ -16,8 +18,8 @@ const Register = () => {
     CreateLoading,
     CreateError,
   ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
-  const navigate = useNavigate();
 
+  const navigate = useNavigate();
   const handleEmailBlur = (event) => {
     setEmail(event.target.value);
   };
@@ -30,6 +32,7 @@ const Register = () => {
     setConfirmPassword(event.target.value);
   };
 
+  // Handle Register
   const handleRegister = (event) => {
     event.preventDefault();
     if (password !== confirmPassword) {
@@ -39,6 +42,7 @@ const Register = () => {
     createUserWithEmailAndPassword(email, password);
   };
 
+  // Handle Navigate user when login
   useEffect(() => {
     if (createUser) {
       navigate("/");

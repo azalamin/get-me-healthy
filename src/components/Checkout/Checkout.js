@@ -3,18 +3,20 @@ import { useForm } from "react-hook-form";
 import { toast, ToastContainer } from "react-toastify";
 import "./Checkout.css";
 
+/* Require Auth Page user will not be able to enter this page until login */
 const Checkout = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  
+
   const errorMessage = <p className="text-danger">Input cannot be empty</p>;
   const successMessage = <p className="text-success">Thank your for booking</p>;
-  
+
   const onSubmit = (data) => {
     if (data.firstName && data.lastName && data.number && data.address) {
+      // Change Toast Message
       toast(successMessage);
       return;
     } else {

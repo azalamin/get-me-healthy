@@ -11,6 +11,7 @@ import Loading from "../../Loading/Loading";
 import "./SocialSignIn.css";
 
 const SocialSignIn = () => {
+  // Handle React Firebase Hooks
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   const [signInWithGithub, githubUser, githubLoading, githubError] =
     useSignInWithGithub(auth);
@@ -18,6 +19,7 @@ const SocialSignIn = () => {
   const location = useLocation();
   const from = location?.state?.from?.pathname || "/";
 
+  // Handle navigate user
   useEffect(() => {
     if (user || githubUser) {
       navigate("/");
@@ -25,6 +27,7 @@ const SocialSignIn = () => {
     }
   }, [user, githubUser]);
 
+  // Handle Loading Spinner
   if (loading || githubLoading) {
     return <Loading></Loading>;
   }

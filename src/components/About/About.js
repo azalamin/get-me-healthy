@@ -1,6 +1,7 @@
 import React from 'react';
 import myPhoto from '../../images/personal_Image.jpg';
 
+/* About Page, Change information from blew */
 const About = () => {
     return (
       <div className="container mt-5">

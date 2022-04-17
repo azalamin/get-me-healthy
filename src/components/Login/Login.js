@@ -11,19 +11,21 @@ import Loading from "../../Loading/Loading";
 import SocialSignIn from "../SocialSignIn/SocialSignIn";
 import "./Login.css";
 
-
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  // Handle React Firebase Hooks
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const [sendPasswordResetEmail, sending, sendingError] =
     useSendPasswordResetEmail(auth);
-    
+
   const navigate = useNavigate();
   const location = useLocation();
   const from = location?.state?.from?.pathname || "/";
 
+  // Handle Navigate user when login
   useEffect(() => {
     if (user) {
       navigate("/");
@@ -43,15 +45,16 @@ const Login = () => {
     signInWithEmailAndPassword(email, password);
   };
 
+  // Handle Reset Password
   const handleResetPassword = async () => {
     if (email) {
       await sendPasswordResetEmail(email);
       toast(sendingError?.message);
     }
-  }
+  };
 
   if (sending) {
-    return <Loading></Loading>
+    return <Loading></Loading>;
   }
 
   return (

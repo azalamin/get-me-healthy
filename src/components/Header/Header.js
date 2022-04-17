@@ -8,8 +8,10 @@ import auth from "../../firebase.init";
 import "./Header.css";
 
 const Header = () => {
-  const [user, loading, error] = useAuthState(auth);
+  const [user] = useAuthState(auth);
   const navigate = useNavigate();
+
+  // Handle Log out and navigate user
   const logout = () => {
     signOut(auth).then(() => {
       navigate("/login");
@@ -43,6 +45,7 @@ const Header = () => {
             >
               About Me
             </CustomLink>
+            {/* When user available show sign out btn and if not available show login button */}
             {user?.uid ? (
               <span
                 style={{ cursor: "pointer" }}
