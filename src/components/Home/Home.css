@@ -39,6 +39,124 @@
   }
 }
 
+/* Contact Form */
+.contact__address h4 {
+  color: #111111;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contact__address ul li {
+  overflow: hidden;
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.contact__address ul li:last-child {
+  margin-bottom: 0;
+}
+
+.contact__address ul li .icon {
+  font-size: 20px;
+  color: #f3bd00;
+  height: 50px;
+  width: 50px;
+  background: #0c2b4b;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  margin-right: 20px;
+}
+
+.contact__address ul li p {
+  overflow: hidden;
+  margin-bottom: 0;
+  color: #111111;
+}
+
+.contact__address ul li p span {
+  display: block;
+}
+
+.contact__form h4 {
+  color: #111111;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contact__form form input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #e1e1e1;
+  background: #ffffff;
+  font-size: 14px;
+  color: #444444;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.contact__form form input::-webkit-input-placeholder {
+  color: #444444;
+}
+
+.contact__form form input::-moz-placeholder {
+  color: #444444;
+}
+
+.contact__form form input:-ms-input-placeholder {
+  color: #444444;
+}
+
+.contact__form form input::-ms-input-placeholder {
+  color: #444444;
+}
+
+.contact__form form input::placeholder {
+  color: #444444;
+}
+
+.contact__form form textarea {
+  width: 100%;
+  height: 110px;
+  border: 1px solid #e1e1e1;
+  background: #ffffff;
+  font-size: 14px;
+  color: #444444;
+  padding-top: 12px;
+  padding-left: 20px;
+  margin-bottom: 24px;
+  resize: none;
+}
+
+.contact__form form textarea::-webkit-input-placeholder {
+  color: #444444;
+}
+
+.contact__form form textarea::-moz-placeholder {
+  color: #444444;
+}
+
+.contact__form form textarea:-ms-input-placeholder {
+  color: #444444;
+}
+
+.contact__form form textarea::-ms-input-placeholder {
+  color: #444444;
+}
+
+.contact__form form textarea::placeholder {
+  color: #444444;
+}
+
+.contact__form form button {
+  width: 100%;
+}
+
 @media (min-width: 991px) {
   .home-container .info-container {
     width: 75%;

@@ -1,0 +1,15 @@
+#footer {
+  background: black;
+}
+#footer img {
+  width: 200px;
+}
+#footer a,
+#footer .address-footer,
+#footer .address-title {
+  color: #c4c4c4;
+  font-size: 15px;
+}
+#footer .footer__copyright__text {
+  background: #14121ae8;
+}

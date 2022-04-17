@@ -20,7 +20,7 @@ Bonus - .5 remaining
 1. (done)
 2. (done)
 3. (done)
-4. (done)
+4. (done) without comments
 5. (done)
 6. (done)
 7. (done)

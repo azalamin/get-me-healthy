@@ -1,12 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ContactMe from "../ContactMe/ContactMe";
 import KeyFeatures from "../KeyFeatures/KeyFeatures";
 import Services from "../Services/Services";
 import "./Home.css";
 
 const Home = () => {
   const navigate = useNavigate();
-
   return (
     <>
       <div className="home-container">
@@ -43,6 +43,7 @@ const Home = () => {
       <section className="mt-5 py-5">
         <KeyFeatures></KeyFeatures>
       </section>
+      <ContactMe></ContactMe>
     </>
   );
 };

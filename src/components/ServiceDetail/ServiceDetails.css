@@ -1,0 +1,9 @@
+.service-card {
+  transition: 0.5s;
+}
+.service-card:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: white;
+  border-color: aquamarine;
+}

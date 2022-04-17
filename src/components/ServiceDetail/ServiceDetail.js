@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import './ServiceDetails.css';
 
 const ServiceDetail = ({ service }) => {
   const { img, name, diet, duration, price, supportTime, facility, des } =
@@ -8,7 +9,7 @@ const ServiceDetail = ({ service }) => {
 
   return (
     <div className="col-md-4 text-center g-5">
-      <div className="card p-3 rounded-3 h-100">
+      <div className="card p-3 rounded-3 h-100 service-card">
         <div>
           <img className="img-fluid rounded-3" src={img} alt="" />
         </div>

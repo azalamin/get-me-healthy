@@ -1,27 +1,34 @@
 import React, { useEffect } from "react";
-import { useSignInWithGithub, useSignInWithGoogle } from "react-firebase-hooks/auth";
-import { useNavigate } from "react-router-dom";
+import {
+  useSignInWithGithub,
+  useSignInWithGoogle
+} from "react-firebase-hooks/auth";
+import { useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import github from "../../images/github.png";
 import google from "../../images/google-logo.png";
 import Loading from "../../Loading/Loading";
-import './SocialSignIn.css';
+import "./SocialSignIn.css";
 
 const SocialSignIn = () => {
-    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-    const [signInWithGithub, githubUser, githubLoading, githubError] = useSignInWithGithub(auth);
-    const navigate = useNavigate();
-    
-    useEffect(() => {
-      if (user || githubUser) {
-        navigate("/");
-      }
-    }, [user, githubUser]);
+  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+  const [signInWithGithub, githubUser, githubLoading, githubError] =
+    useSignInWithGithub(auth);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location?.state?.from?.pathname || "/";
 
-    if (loading || githubLoading) {
-        return <Loading></Loading>
+  useEffect(() => {
+    if (user || githubUser) {
+      navigate("/");
+      navigate(from, { replace: true });
     }
-    
+  }, [user, githubUser]);
+
+  if (loading || githubLoading) {
+    return <Loading></Loading>;
+  }
+
   return (
     <div className="mt-5">
       <p className="social-btn" onClick={() => signInWithGoogle()}>
