@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import './ServiceDetails.css';
 
 const ServiceDetail = ({ service }) => {
-  const { img, name, diet, duration, price, supportTime, facility, des } =
+  const { img, name, diet, duration, price, supportTime, facility, des, id } =
     service;
   const navigate = useNavigate();
 
@@ -33,7 +33,7 @@ const ServiceDetail = ({ service }) => {
             <button
               style={{ fontSize: "20px" }}
               className="btn btn-success d-block w-100"
-              onClick={()=> navigate('/checkout')}
+              onClick={()=> navigate(`/checkout/${id}`)}
             >
               Book now
             </button>
