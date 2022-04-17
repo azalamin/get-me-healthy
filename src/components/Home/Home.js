@@ -1,9 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import KeyFeatures from "../KeyFeatures/KeyFeatures";
 import Services from "../Services/Services";
 import "./Home.css";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="home-container">
@@ -17,10 +20,16 @@ const Home = () => {
                 enforcing policies regarding safe and proper use of equipment.
               </p>
               <div className="md-text-align-start text-align-center button-area">
-                <button className="btn btn-outline-warning btn-lg d-md-inline  ">
+                <button
+                  className="btn btn-outline-warning btn-lg d-md-inline"
+                  onClick={() => navigate("/register")}
+                >
                   SIGN UP
                 </button>
-                <button className="btn btn-outline-warning btn-lg ms-md-4 d-md-inline ">
+                <button
+                  className="btn btn-outline-warning btn-lg ms-md-4 d-md-inline"
+                  onClick={() => navigate("/about")}
+                >
                   ABOUT ME
                 </button>
               </div>
