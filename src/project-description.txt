@@ -1,7 +1,52 @@
-
+Main Part - 2.5 remaining
 1. A website for an individual who provides services (done)
 2. Make sure your design and website idea is unique. (done)
-2. Give your website a name. (done)
+3. Give your website a name. (done)
+4. (done)
+6. (done)
+7. (done)
+8. half done, extra work is remain
+9. (done)
+10. (done)
+11. (done)
+12. (done)
+13. ------------
+14. ------------
+15. (done)
+16. (done)
+
+
+Bonus - .5 remaining
+1. half done
+2. (done)
+3. (done)
+4. (done)
+5. (done)
+6. (done)
+7. (done)
+
+
+Optional - 6 remaining
+1. ---------
+2. ---------
+3. ---react-leaflet
+4. half done
+5. half done
+6. (done)
+7. ----------
+8. (done)
+
+
+
+additional Info
+1. (done)
+2. (done)
+3. (done)
+4. (done)
+5. (done)
+6. (done)
+
+
 
 
 
