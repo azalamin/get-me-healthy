@@ -1,11 +1,22 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { Link, useNavigate } from "react-router-dom";
+import auth from "../../firebase.init";
 import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
+  const [signInWithEmailAndPassword, user, loading, error] =
+    useSignInWithEmailAndPassword(auth);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (user) {
+      navigate("/");
+    }
+  }, [user]);
+
   const handleEmailBlur = (event) => {
     setEmail(event.target.value);
   };
@@ -14,9 +25,9 @@ const Login = () => {
   };
 
   const handleLogin = (event) => {
-      event.preventDefault();
-      console.log(email, password);
-  }
+    event.preventDefault();
+    signInWithEmailAndPassword(email, password);
+  };
 
   return (
     <>
@@ -76,6 +87,7 @@ const Login = () => {
                         Register
                       </Link>
                     </p>
+                    <p className="mt-2 text-danger">{error?.message}</p>
                   </div>
                 </form>
               </div>

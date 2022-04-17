@@ -41,7 +41,6 @@ const Register = () => {
   useEffect(() => {
     if (createUser) {
       navigate("/");
-      console.log(createUser);
     }
   }, [createUser]);
 
