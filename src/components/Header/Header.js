@@ -11,10 +11,9 @@ const Header = () => {
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
   const logout = () => {
-    signOut(auth)
-    .then(() => {
-        navigate('/login')
-    })
+    signOut(auth).then(() => {
+      navigate("/login");
+    });
   };
 
   return (
@@ -32,7 +31,16 @@ const Header = () => {
             <CustomLink className="text-decoration-none ms-lg-4 n-link" to="/">
               Home
             </CustomLink>
-            <CustomLink className="text-decoration-none ms-lg-4 n-link" to="/about">
+            <CustomLink
+              className="text-decoration-none ms-lg-4 n-link"
+              to="/blogs"
+            >
+              Blogs
+            </CustomLink>
+            <CustomLink
+              className="text-decoration-none ms-lg-4 n-link"
+              to="/about"
+            >
               About Me
             </CustomLink>
             {user?.uid ? (
@@ -44,7 +52,10 @@ const Header = () => {
                 Sign Out
               </span>
             ) : (
-              <CustomLink className="text-decoration-none ms-lg-4 n-link" to="/login">
+              <CustomLink
+                className="text-decoration-none ms-lg-4 n-link"
+                to="/login"
+              >
                 Login
               </CustomLink>
             )}

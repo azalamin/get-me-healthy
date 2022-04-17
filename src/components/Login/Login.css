@@ -143,6 +143,10 @@
 .valid-feedback {
   color: #2acc80;
 }
+.forget-btn {
+  color: orange !important;
+  cursor: pointer;
+}
 
 @media (max-width: 576px) {
   .form-items {
