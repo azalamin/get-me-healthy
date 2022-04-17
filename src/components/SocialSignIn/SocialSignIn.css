@@ -1,0 +1,35 @@
+.social-btn {
+  border-radius: 20px;
+  text-align: center;
+  padding: 8px 10px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.social-btn:hover {
+  background-color: rgba(109, 109, 109, 0.256);
+}
+.social-btn img {
+  margin-left: 10px;
+}
+.social-btn span {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+@media (max-width: 420px) {
+  .social-btn img {
+    width: 40px;
+    margin-left: 0px;
+  }
+  .social-btn span {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  .social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

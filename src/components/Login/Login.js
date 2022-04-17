@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
+import SocialSignIn from "../SocialSignIn/SocialSignIn";
 import "./Login.css";
 
 const Login = () => {
@@ -93,6 +94,7 @@ const Login = () => {
                     <p className="mt-2 text-danger">{error?.message}</p>
                   </div>
                 </form>
+                <SocialSignIn></SocialSignIn>
               </div>
             </div>
           </div>

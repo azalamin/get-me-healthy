@@ -3,6 +3,7 @@ import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import Loading from "../../Loading/Loading";
+import SocialSignIn from "../SocialSignIn/SocialSignIn";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -112,6 +113,7 @@ const Register = () => {
                       <p className="text-danger ms-2">{CreateError?.message}</p>
                     </div>
                   </form>
+                  <SocialSignIn></SocialSignIn>
                 </div>
               </div>
             </div>
